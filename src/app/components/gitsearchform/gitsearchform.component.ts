@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitsearchformComponent implements OnInit {
 
- 
+ username!: string;
 
+submitUsername() {
+
+}
 
   constructor() { }
 
