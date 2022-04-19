@@ -35,7 +35,7 @@ export class GitsearchService {
 	        html_url:string   
 	    }
 
-	    let promise =new Promise((resolve,reject)=>{
+	    let promise = new Promise((resolve,reject)=>{
 	        this.http.get<ApiResponse>("https://api.github.com/users/" + username).toPromise().then(response=>{
 	            this.user.bio=response!.bio;
 	            this.user.avatar_url=response!.avatar_url;
@@ -60,9 +60,8 @@ export class GitsearchService {
 
 	        },
 	        error=>{
-
-	                reject(error)
-	            }
+                reject(error)
+            }
 	        )
 	    })
 
