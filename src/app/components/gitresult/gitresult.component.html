@@ -1,20 +1,28 @@
-<div class="container-fluid">
+<div class="container-fluid" style="background-color: #fef9f8; font-family: Garamond,serif;">
     <div class="row">
         <!-- profile details -->
         <div class="col-md-4">
                         
             <img src="{{user.avatar_url}}">
-            <h1 class="display-5"><strong>{{user.login}}</strong></h1> 
-            <p>{{user.bio}}</p>
+            <h1 class="display-6"><strong style="font-family:'Playfair Display',serif;">{{user.login}}</strong></h1> 
+            <p><span style= "font-style: italic;">{{user.bio}}</span></p>
         </div>
         <!-- list of repos -->
       <div class="col-md-1"></div>
         <div class="col-md-7">
             <div *ngFor='let repository of userRepositories'>
-               <div class="card">
-                <h3>{{repository.name}} </h3>
-                <h4>{{repository.created_at}}</h4>
-                <p> {{repository.description}}</p>
+               <div class="card mb-3 text-center" style="color: #0d0d0d;">
+                   <div class="card-header">
+                    {{repository.name}} 
+                   </div>
+                   <div class="card-body">
+                        <p class="card-title" style="font-style:italic">Repo Description...</p>
+                        <p class="card-text"> {{repository.description}} </p>
+                   </div>
+                   <div class="card-footer text-muted">
+                    posted: {{repository.created_at|dateCount}}days ago
+                   </div>
+                <p> </p>
                </div>
                
 

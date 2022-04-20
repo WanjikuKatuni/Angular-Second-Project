@@ -3,3 +3,7 @@ img {
     width: 80%;
     max-height: 60%;
 }
+
+.card {
+    border-color: #ef9273;
+}

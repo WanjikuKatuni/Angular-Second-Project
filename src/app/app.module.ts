@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { GitsearchformComponent } from './components/gitsearchform/gitsearchform.component';
 import { GitresultComponent } from './components/gitresult/gitresult.component';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { DateCountPipe } from './pipe/date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     GitsearchformComponent,
-    GitresultComponent
+    GitresultComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

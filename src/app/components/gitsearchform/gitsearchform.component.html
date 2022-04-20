@@ -1,13 +1,13 @@
-<div class="container">
+<div class="container" style="background-color: #fef9f8;">
     <div class="row">
        
         <div class="col">
-            <h1 class="display-1" style="text-align: center;">GitHub Search</h1>
+            <h1 class="display-1" style="text-align: center; color: #0d0d0d; font-family: 'Yellowtail',cursive;">GitHub Search</h1>
             <br><br>
-            <form (ngSubmit)='submitUsername()' #gitsearchForm='ngForm' name="gitsearchForm" style="text-align:center">
+            <form (ngSubmit)='submitUsername()' #gitsearchForm='ngForm' name="gitsearchForm" style="text-align:center; font-family: 'Open Sans', sans-serif;">
                 <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" placeholder="Enter GitHub Username">
                 <br>
-                <button type="submit" class="btn btn-success"> Search User on GitHub</button>
+                <button type="submit" class="btn"> Search User on GitHub</button>
             </form>
         </div>   
        
