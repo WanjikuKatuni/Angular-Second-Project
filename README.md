@@ -1,5 +1,10 @@
 # GitSearch
  This is an application which allows the user to search for a github user. The user will then be  shown the bio of the github user plus their repository.
+
+
+  ![A test Image](./src/assets/githubsearch.png)
+
+
 ## Tech Used
 
 -This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
