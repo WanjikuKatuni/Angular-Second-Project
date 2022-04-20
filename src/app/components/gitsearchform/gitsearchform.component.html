@@ -6,8 +6,8 @@
             <p style="text-align: center; color: #0d0d0d; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Search a GitHub user through this App!</p>
             <br><br>
             <form (ngSubmit)='submitUsername()' #gitsearchForm='ngForm' name="gitsearchForm" style="text-align:center; font-family: 'Open Sans', sans-serif;">
-                <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" placeholder="Enter GitHub Username">
-                <div [hidden] ="username.valid || name.pristine" class="alert alert-danger">
+                <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" #name='ngModel' placeholder="Enter GitHub Username" required>
+                <div [hidden] ="name.valid || name.pristine" class="alert alert-danger">
                     <p>Username is required for search</p>
                 </div>
                 <br>

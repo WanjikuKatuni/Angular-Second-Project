@@ -1,8 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { userInfo } from 'os';
+import { User } from 'src/app/model/user';
 
 import { GitsearchformComponent } from './gitsearchform.component';
 
 describe('GitsearchformComponent', () => {
+  
+ 
   let component: GitsearchformComponent;
   let fixture: ComponentFixture<GitsearchformComponent>;
 
