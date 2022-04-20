@@ -8,7 +8,7 @@
             <form (ngSubmit)='submitUsername()' #gitsearchForm='ngForm' name="gitsearchForm" style="text-align:center; font-family: 'Open Sans', sans-serif;">
                 <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" placeholder="Enter GitHub Username">
                 <div [hidden] ="username.valid || name.pristine" class="alert alert-danger">
-                    
+                    <p>Username is required for search</p>
                 </div>
                 <br>
                 <button type="submit" class="btn"> Search User on GitHub</button>
